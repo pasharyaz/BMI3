@@ -2,6 +2,7 @@ package app.model;
 
 import app.entities.BmiData;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -34,5 +35,11 @@ public class Model {
                 .map(BmiData::getBmiResult)
                 .collect(Collectors.toList());
     }
+
+    public Object[] arrayBMI() {
+        return model.toArray();
+    }
+
+
 
 }

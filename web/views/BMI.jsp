@@ -36,7 +36,7 @@
 
 <u1>Your BMI is:</u1>
 <u1>${lastBMI}</u1>
-<%System.out.println(Model.getInstance().listResult());%>
+<%--<%System.out.println(Model.getInstance());%>--%>
 
 
 <div>
@@ -45,9 +45,9 @@
 
 <ul>
     <table>
-        <c:forEach var="BmiData" items="${BMIResult}">
+        <c:forEach var="modelEx" items="${model}">
 
-            <p>${BmiData}</p>
+            <p>${modelEx}</p>
 
 
         </c:forEach>
