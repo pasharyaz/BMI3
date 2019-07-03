@@ -1,4 +1,4 @@
-<%@ page import="java.util.List" %><%--
+<%--
   Created by IntelliJ IDEA.
   User: pryazanov
   Date: 26.06.2019
@@ -20,7 +20,7 @@
     <div>
         <h2>Insert your parameters to count you BMI</h2>
     </div>
-<form method="post" action = "BMI.jsp">
+    <form method="post" action="BMI.jsp">
 
         <label>Weight in kg:
             <input type="text" name="weight"><br/>
@@ -29,7 +29,7 @@
             <input type="text" name="height"><br/>
         </label>
         <button type="submit">Submit</button>
-</form>
+    </form>
 
 </div>
 <%--<a href="BMI.jsp">History</a>--%>

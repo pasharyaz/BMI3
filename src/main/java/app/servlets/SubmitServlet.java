@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
 
 public class SubmitServlet extends HttpServlet {
     /*@Override
@@ -26,14 +24,10 @@ public class SubmitServlet extends HttpServlet {
         Model model = Model.getInstance();
         model.add(bmiData);
 
-        List<Double> bmiList = model.listBmi();
-        List<String> bmiListResult = model.listResult();
-
 
         req.setAttribute("model", model.arrayBMI());
         req.setAttribute("lastBMI", bmiData);
-        req.setAttribute("BMI", bmiList);
-        req.setAttribute("BMIResult", bmiListResult);
+
 
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/BMI.jsp");
         requestDispatcher.forward(req, resp);
