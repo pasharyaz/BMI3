@@ -19,17 +19,17 @@ public class Model {
         model = new ArrayList<BmiData>();
     }
 
-    public void add(BmiData bmiData){
+    public void add(BmiData bmiData) {
         model.add(bmiData);
     }
 
-    public List<Double> listBmi(){
+    public List<Double> listBmi() {
         return model.stream()
                 .map(BmiData::getBmi)
                 .collect(Collectors.toList());
     }
 
-    public List<String> listResult(){
+    public List<String> listResult() {
         return model.stream()
                 .map(BmiData::getBmiResult)
                 .collect(Collectors.toList());

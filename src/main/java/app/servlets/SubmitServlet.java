@@ -28,9 +28,12 @@ public class SubmitServlet extends HttpServlet {
         List<Double> bmiList = model.listBmi();
         List<String> bmiListResult = model.listResult();
 
+
+
+        req.setAttribute("model", model);
         req.setAttribute("lastBMI", bmiData);
-        req.setAttribute("bmi", bmiList);
-        req.setAttribute("bmiResult", bmiListResult);
+        req.setAttribute("BMI", bmiList);
+        req.setAttribute("BMIResult", bmiListResult);
 
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("/views/BMI.jsp");
         requestDispatcher.forward(req, resp);
