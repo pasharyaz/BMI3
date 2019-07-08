@@ -1,6 +1,6 @@
 package app.model;
 
-import app.entities.BmiData;
+import app.entities.BmiDataImpl;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 public class Model {
     private static Model ourInstance = new Model();
 
-    private List<BmiData> model;
+    private List<BmiDataImpl> model;
 
     public static Model getInstance() {
         return ourInstance;
@@ -18,8 +18,8 @@ public class Model {
         model = new ArrayList<>();
     }
 
-    public void add(BmiData bmiData) {
-        model.add(bmiData);
+    public void add(BmiDataImpl bmiDataImpl) {
+        model.add(bmiDataImpl);
     }
 
 

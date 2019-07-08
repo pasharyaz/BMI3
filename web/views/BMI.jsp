@@ -43,10 +43,11 @@
 </div>
 
 <ul>
-    <table>
-        <c:forEach var="modelEx" items="${model}">
 
-            <p>${modelEx}</p>
+    <table>
+        <c:forEach var="BmiEx" items="${BmiList}">
+
+            <p>${BmiEx}</p>
 
 
         </c:forEach>
