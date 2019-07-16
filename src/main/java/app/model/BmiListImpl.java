@@ -22,7 +22,18 @@ public class BmiListImpl implements BmiList {
     }
 
     @Override
-    public Object[] BmiArray() {
-        return bmiDataList.toArray();
+    public List<BmiData> getBmiList() {
+        return bmiDataList;
     }
+
+    @Override
+    public BmiData getLastBmi() {
+
+        try {
+            return bmiDataList.get(bmiDataList.size() - 1);
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
 }

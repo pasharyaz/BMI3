@@ -1,4 +1,5 @@
 import app.entities.BmiDataImpl;
+import app.servlets.SubmitServlet;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -11,6 +12,11 @@ public class BMITest {
         invalidValuesTest();
         belowZeroValuesTest();
         validValuesTest();
+    }
+
+    @Test
+    private static void tryTest() {
+
     }
 
     @Test

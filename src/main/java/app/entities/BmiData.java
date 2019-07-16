@@ -1,17 +1,18 @@
 package app.entities;
 
 public interface BmiData {
-    void setWeight(String weight);
 
     String getWeight();
+
+    void setWeight(String weight);
 
     String getHeight();
 
     void setHeight(String height);
 
-    void setBmi();
-
     double getBmi();
+
+    void setBmi();
 
     String getBmiResult();
 
